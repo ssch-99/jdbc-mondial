@@ -22,8 +22,9 @@ public class Countries {
 
     Country country = countryRepository.findCountryByCode("CH");
 
-    //System.out.println(country.getName() + "; " + country.getPopulation());
+    System.out.println(country.getName() + "; " + country.getPopulation());
 
+    System.out.println("--------SEARCH COUNTRIES BY NAME--------");
 
     Country[] countries = countryRepository.getCountriesLike("sw");
 
